@@ -1,2 +1,2 @@
-# ziptastic-cplusplus
+# ziptastic-c-
 Official Ziptastic C++ library
