@@ -10,11 +10,11 @@ class Ziptastic
         string apiKey;
     public:
         Ziptastic(string key); // Constructor
-        ForwardGeo(string zip);
-        ReverseGeo(string latitude, string longitude);
-        MakeRequest(string url);
-        GetApiKey();
-}
+        void forwardGeo(string zip);
+        void reverseGeo(string latitude, string longitude);
+        void makeRequest(string url);
+        void getApiKey();
+};
 
 //member functions
 Ziptastic::Ziptastic(string key)
@@ -22,28 +22,28 @@ Ziptastic::Ziptastic(string key)
     apiKey = key;
 }
 
-void Ziptastic::ForwardGeo()
+void Ziptastic::forwardGeo(string zip)
 {
     
 }
 
-void Ziptastic::ReverseGeo()
+void Ziptastic::reverseGeo(string latitude, string longitude)
 {
 
 }
 
-string Ziptastic::MakeRequest()
+void Ziptastic::makeRequest(string url)
 {
 
 }
 
-void Ziptastic::GetApiKey()
+void Ziptastic::getApiKey()
 {
     cout << "API KEY : " << apiKey;
 }
 
 int main()
 {
-    Ziptastic Ziptastic("asdasdasdasdasd");
-    Ziptastic.GetApiKey();
+    Ziptastic ziptastic("asdasdasdasdasd");
+    ziptastic.getApiKey();
 }
